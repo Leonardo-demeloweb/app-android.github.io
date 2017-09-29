@@ -27,13 +27,6 @@ under the License.
   <meta name="msapplication-tap-highlight" content="no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
   <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-  integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-  crossorigin=""></script>
   <!-- Good default declaration:
   * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
   * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -42,11 +35,12 @@ under the License.
   * Enable eval(): add 'unsafe-eval' to default-src
   * Create your own at http://cspisawesome.com
 -->
+<script src="https://use.fontawesome.com/98f606fef3.js"></script>
 <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-<meta name="description" content="HTML5 website template">
+<meta name="description" content="Leonardo de Melo Personal Profile">
 <meta name="keywords" content="Fullstack, Frontend, HTML, SASS, JavaScript">
-<meta name="author" content="leonardo">
-<link rel="stylesheet" type="text/css" href="css/index.css" />
+<meta name="author" content="Leonardo de Melo">
+<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
 <title>Leonardo de Melo</title>
 </head>
 
@@ -54,7 +48,7 @@ under the License.
   <!-- notification for small viewports and landscape oriented smartphones -->
   <div class="device-notification">
     <a class="device-notification--logo" href="#0">
-      <img src="img/logo.png" alt="Global">
+      <i class="mdi mdi-bell"></i>
       <p>Leonardo de Melo frontend dev.</p>
     </a>
     <p class="device-notification--message">Não suporta este tamanho de tela, tente em um screen size maior.</p>
@@ -66,8 +60,8 @@ under the License.
       <div class="l-wrapper">
         <header class="header">
           <a class="header--logo" href="#0">
-            <img src="img/logo.png" alt="Global">
-            <p></>Leonardo de Melo</p>
+            <i class="fa fa-terminal fa-2x" aria-hidden="true"></i>
+            <p>FullStack Development</p>
           </a>
           <button class="header--cta cta"></button>
           <div class="header--nav-toggle">
@@ -77,10 +71,10 @@ under the License.
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Home</span></li>
-            <li><span>Trabalhos</span></li>
+            <li><span>Projetos</span></li>
             <li><span>Sobre</span></li>
             <li><span>Contato</span></li>
-            <li><span>Contrate-nos</span></li>
+            <li><span>Contrate</span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
@@ -88,7 +82,7 @@ under the License.
             <div class="intro">
               <div class="intro--banner">
                 <h1>Sua próxima <br>experiência<br>interativa</h1>
-                <button class="cta">Saiba mais
+                <button class="cta">Leonardo de Melo dev.
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                       <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
@@ -96,20 +90,20 @@ under the License.
                   </svg>
                   <span class="btn-background"></span>
                 </button>
-                <img src="img/introduction-visual.png" alt="Welcome">
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
               </div>
               <div class="intro--options">
                 <a href="#0">
                   <h3>Leonardo de Melo</h3>
-                  <p>Análise, Pesquisa & Desenvolvimento de softwares, sistemas e aplicações desktop/ mobile</p>
+                  <p>Análise, Pesquisa & Desenvolvimento de softwares, sistemas e aplicações desktop/ mobile.</p>
                 </a>
                 <a href="#0">
                   <h3>Consultoria Frontend</h3>
-                  <p>Angular 4, ng/cli, webpack, NPM, NODE.js, Material Design, SASS</p>
+                  <p>Angular 4, ng/cli, webpack, NPM, JavaScript, Material Design, SASS.</p>
                 </a>
                 <a href="#0">
                   <h3>Soluções Fullstack</h3>
-                  <p>JavaScript, ECMA6, TypeScript, JAVA, PHP, Relational e non-relational DBs, RESTFul e webservices.</p>
+                  <p>NODE.js, ECMA6, TypeScript, JAVA, Relational e non-relational DBs, RESTFul e webservices.</p>
                 </a>
               </div>
             </div>
@@ -122,181 +116,178 @@ under the License.
                   <li class="slider--item slider--item-left">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <img src="img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                        <iframe src="https://player.vimeo.com/video/234915741?portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                      </div>
+                      <p class="slider--item-title">Personal APP-Profile</p>
+                      <p class="slider--item-description">Estrutura mobile de aplicação Angular 4, ng/cli, npm, webpack e material design.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <img src="img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                        <iframe src="https://player.vimeo.com/video/228903205?portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                       </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                </svg>
-              </div>
-              <div class="slider--next">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="l-section section">
-          <div class="about">
-            <div class="about--banner">
-              <h2>Nós<br>acreditamos em<br>paixão pela<br>inovação</h2>
-              <a href="#0">Carreira
-                <span>
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-              <img src="img/about-visual.png" alt="About Us">
-            </div>
-            <div class="about--options">
-              <a href="#0">
-                <h3>Portifolio</h3>
-              </a>
-              <a href="#0">
-                <h3>Currículo</h3>
-              </a>
-              <a href="#0">
-                <h3>Linkedin</h3>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="l-section section">
-          <div class="contact">
-            <div class="contact--lockup">
-              <div class="modal">
-                <div class="modal--information">
-                  <p>Centro, Belo Horizonte - MG</p>
-                  <a href="mailto:demelo01@gmail.com">demelo01@gmail.com</a>
-                  <a href="tel:+148126287560">31 985844567</a>
+                        <p class="slider--item-title">Diário dos Associados</p>
+                        <p class="slider--item-description">Estrutura mobile de aplicação Material Design Bootstrap, RESTful Api, XHR request, JavaScript, SASS.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-right">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <iframe src="https://player.vimeo.com/video/199923358?portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                          <p class="slider--item-title">Website pessoal 2013</p>
+                          <p class="slider--item-description">Versão 2013 de portófilo pessoal como desenvolvedor web, JavaScript fullstack browser coding development.</p>
+                        </a>
+                      </li>
+                      <li class="slider--item slider--item-right">
+                        <a href="#0">
+                          <div class="slider--item-image">
+                            <iframe src="https://player.vimeo.com/video/199918850?portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          </div>
+                            <p class="slider--item-title">Fito Plataform</p>
+                            <p class="slider--item-description">Frontend, para usuário final, de startup de eventos com base tecnológica, modelada no INOVA/ UFMG 2016. JavaScript fullstack browser coding development.</p>
+                          </a>
+                        </li>
+                    </ul>
+                    <div class="slider--prev">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                        c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                        c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="slider--next">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                      </g>
+                    </svg>
+                  </div>
                 </div>
-                <ul class="modal--options">
-                  <li><a href="#0">Linkedin</a></li>
-                  <li><a href="#0">Github</a></li>
-                  <li><a href="mailto:demelo01@gmail.com">Contato</a></li>
-                </ul>
               </div>
-            </div>
-          </div>
-        </li>
-        <li class="l-section section">
-          <div class="hire">
-            <h2>O que vocês gostariam que fizéssemos?</h2>
-            <!-- checkout formspree.io for easy form setup -->
-            <form class="work-request">
-              <div class="work-request--options">
-                <span class="options-a">
-                  <input id="opt-1" type="checkbox" value="app design">
-                  <label for="opt-1">
+            </li>
+            <li class="l-section section">
+              <div class="about">
+                <div class="about--banner">
+                  <h2>Nós<br>acreditamos em<br>paixão pela<br>inovação e criatividade</h2>
+                  <a href="https://github.com/Leonardo-demeloweb" target="_blank">Carreira
+                    <span>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                          <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                  <img src="assets/img/about-visual.png" alt="About Us">
+                </div>
+                <div class="about--options">
+                  <a href="https://github.com/Leonardo-demeloweb" target="_blank">
+                    <h3>Github</h3>
+                  </a>
+                  <a href="https://www.linkedin.com/in/leonardo-de-melo/" target="_blank">
+                    <h3>Linkedin</h3>
+                  </a>
+                  <a href="https://vimeo.com/user13965888" target="_blank">
+                    <h3>Vimeo</h3>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="modal">
+                    <div class="modal--information">
+                      <p>Centro, Belo Horizonte - MG</p>
+                      <a href="mailto:demelo01@gmail.com">demelo01@gmail.com</a>
+                      <a href="tel:+148126287560">31 985844567</a>
+                    </div>
+                    <ul class="modal--options">
+                      <li><a href="https://www.linkedin.com/in/leonardo-de-melo/" target="_blank">Linkedin</a></li>
+                      <li><a href="https://github.com/Leonardo-demeloweb" target="_blank">Github</a></li>
+                      <li><a href="mailto:demelo01@gmail.com" target="_blank">Contato</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="hire">
+                <h2>O que vocês gostariam que fosse desenvolvido?</h2>
+                <!-- checkout formspree.io for easy form setup -->
+                <form class="work-request">
+                  <div class="work-request--options">
+                    <span class="options-a">
+                      <input id="opt-1" type="checkbox" value="app design">
+                      <label for="opt-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                      </svg>
+                      Software Development
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                    </svg>
+                    App mobile Development
+                  </label>
+                  <input id="opt-3" type="checkbox" value="motion design">
+                  <label for="opt-3">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                     <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                       <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                     </g>
                   </svg>
-                  Software Development
+                  Motion Design
                 </label>
-                <input id="opt-2" type="checkbox" value="graphic design">
-                <label for="opt-2">
+              </span>
+              <span class="options-b">
+                <input id="opt-4" type="checkbox" value="ux design">
+                <label for="opt-4">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                   <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                     <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                   </g>
                 </svg>
-                App mobile Development
+                UX Design
               </label>
-              <input id="opt-3" type="checkbox" value="motion design">
-              <label for="opt-3">
+              <input id="opt-5" type="checkbox" value="webdesign">
+              <label for="opt-5">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                 <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                   <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                 </g>
               </svg>
-              Motion Design
+              Frontend development
             </label>
-          </span>
-          <span class="options-b">
-            <input id="opt-4" type="checkbox" value="ux design">
-            <label for="opt-4">
+            <input id="opt-6" type="checkbox" value="marketing">
+            <label for="opt-6">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
               <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                 <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
               </g>
             </svg>
-            UX Design
+            Fullstack Development
           </label>
-          <input id="opt-5" type="checkbox" value="webdesign">
-          <label for="opt-5">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-            <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-              <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-            </g>
-          </svg>
-          Frontend development
-        </label>
-        <input id="opt-6" type="checkbox" value="marketing">
-        <label for="opt-6">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-          </g>
-        </svg>
-        Fullstack Development
-      </label>
-    </span>
+        </span>
+      </div>
+    </form>
   </div>
-  <div class="work-request--information">
-    <div class="information-name">
-      <input id="name" type="text" spellcheck="false">
-      <label for="name">Nome</label>
-    </div>
-    <div class="information-email">
-      <input id="email" type="email" spellcheck="false">
-      <label for="email">Email</label>
-    </div>
-  </div>
-  <input type="submit" value="Send Request">
-</form>
-</div>
 </li>
 </ul>
 </div>
@@ -304,17 +295,18 @@ under the License.
 </div>
 <ul class="outer-nav">
   <li class="is-active">Home</li>
-  <li>Trabalhos</li>
+  <li>Projetos</li>
   <li>Sobre</li>
   <li>Contato</li>
-  <li>Contrate-nos</li>
+  <li>Contrate</li>
 </ul>
 </div>
-<script type="text/javascript" src="cordova.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="js/functions-min.js"></script>
-<script src="js/functions.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/vendor/hammer-2.0.8.js"></script>
+<script src="assets/js/functions-min.js"></script>
+<script src="assets/js/functions.js"></script>
+
 </body>
 
 </html>
